@@ -78,8 +78,8 @@ According to its Wiki, Tmux is a *terminal multiplexer*, which
 translated in human language would mean that it\'s a tool for connecting
 multiple terminals to a single terminal session.
 
-![](./12-images/media/image1.jpeg){width="6.5in"
-height="3.063888888888889in"}A Tmux Terminal With 3 Split Screens
+![](./images/image001.jpeg)
+A Tmux Terminal With 3 Split Screens
 
 It lets you switch between programs in one terminal, add split screen
 panes, and attach multiple terminals to the same session, keeping them
@@ -183,8 +183,8 @@ Htop is a more powerful alternative to the built-in top task manager. It
 provides an advanced interface with many options for monitoring and
 controlling system processes.
 
-![](./12-images/media/image2.jpeg){width="6.5in"
-height="3.063888888888889in"}The htop task manager in action.
+![](.images/image002.jpeg) 
+The htop task manager in action.
 
 Although it runs in the terminal, htop has very good support for mouse
 controls. This makes it much easier to navigate the menus, select
