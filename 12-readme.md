@@ -1,3 +1,6 @@
+# 12-term-commands
+12 terminal commands we should all know.
+
 **12 Terminal Commands Every Web Developer Should Know About**
 
 [**Curl**](https://curl.haxx.se/)
