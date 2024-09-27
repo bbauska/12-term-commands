@@ -12,7 +12,7 @@ files, check response headers, and freely access remote data.
 In web development curl is often used for testing connections and
 working with RESTful APIs.
 ```
-\# Fetch the headers of a URL.
+# Fetch the headers of a URL.
 curl -I http://google.com
 HTTP/1.1 302 Found
 ```
@@ -28,7 +28,7 @@ Content-Length: 258
 
 Date: Wed, 09 Aug 2017 11:24:01 GMT
 ```
-\# Make a GET request to a remote API.
+# Make a GET request to a remote API.
 curl http://numbersapi.com/random/trivia
 ```
 29 is the number of days it takes Saturn to orbit the Sun.
@@ -63,7 +63,7 @@ tree
 There is also the option to filter the results using a simple regEx-like
 pattern:
 ```
-tree -P \'\*.min.\*\'
+tree -P '*.min.*'
 .
 ├── css
 │   ├── bootstrap.min.css
