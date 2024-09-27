@@ -97,18 +97,13 @@ A common use case for du is when one of your drives is running out of
 space and you don\'t know why. Using this command you can quickly see
 how much storage each folder is taking, thus finding the biggest memory
 hoarder.
-
-\# Running this will show the space usage of each folder in the current
-directory.
-
-\# The -h option makes the report easier to read.
-
-\# -s prevents recursiveness and shows the total size of a folder.
-
-\# The star wildcard (\*) will run du on each file/folder in current
-directory.
 ```
-du -sh \*
+# Running this will show the space usage of each folder in the current directory.
+# The -h option makes the report easier to read.
+# -s prevents recursiveness and shows the total size of a folder.
+# The star wildcard (*) will run du on each file/folder in current directory.
+
+du -sh *
 1.2G Desktop
 4.0K Documents
 40G Downloads
@@ -154,9 +149,9 @@ as [unzip](https://www.computerhope.com/unix/unzip.htm).
 Many modern Unix systems run an expanded version of tar (GNU tar) that
 can also perform file size compression:
 ```
-\# Create compressed gzip archive.
+# Create compressed gzip archive.
 tar -czf file.tar.gz inputfile1 inputfile2
-\# Extract .gz archive.
+# Extract .gz archive.
 tar -xzf file.tar.gz
 ```
 If your OS doesn\'t have that version of tar, you can
@@ -207,7 +202,7 @@ we have a directory on our desktop called *Scripts*. It contains neatly
 organized bash scripts that we commonly use. Each time we want to call
 one of our scripts we would have to do this:
 ```
-\~/Desktop/Scripts/git-scripts/git-cleanup
+~/Desktop/Scripts/git-scripts/git-cleanup
 ```
 Obviously, this is isn\'t very convinient as we have to write the
 absolute path every time. Instead we can create a symlink from
@@ -260,7 +255,7 @@ errors from today.
 // Search for today\'s date (in format yyyy-mm-dd) and write the results
 to a new file.
 ```
-grep \"\$(date +\"%Y-%m-%d\")\" all-errors-ever.log \> today-errors.log
+grep "$(date +"%Y-%m-%d")" all-errors-ever.log > today-errors.log
 ```
 Another great command for working with strings
 is [sed](https://www.computerhope.com/unix/used.htm). It
@@ -274,11 +269,11 @@ pretty long after you add all the options to them. To make them easier
 to remember, you can create short aliases with the *alias* bash built-in
 command:
 ```
-\# Create an alias for starting a local web server.
-alias server=\"python -m SimpleHTTPServer 9000\"
-\# Instead of typing the whole command simply use the alias.
+# Create an alias for starting a local web server.
+alias server=\"python -m SimpleHTTPServer 9000"
+# Instead of typing the whole command simply use the alias.
 server
-Serving HTTP on 0.0.0.0 port 9000 \...
+Serving HTTP on 0.0.0.0 port 9000 ...
 ```
 
 The alias will be available as long as you keep that terminal open. To
