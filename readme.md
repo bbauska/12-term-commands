@@ -252,8 +252,7 @@ be filtered. Below we use grep in combination with the date command to
 search through a large log file and generate a new file containing only
 errors from today.
 
-// Search for today\'s date (in format yyyy-mm-dd) and write the results
-to a new file.
+// Search for today's date (in format yyyy-mm-dd) and write the results to a new file.
 ```
 grep "$(date +"%Y-%m-%d")" all-errors-ever.log > today-errors.log
 ```
@@ -270,7 +269,8 @@ to remember, you can create short aliases with the *alias* bash built-in
 command:
 ```
 # Create an alias for starting a local web server.
-alias server=\"python -m SimpleHTTPServer 9000"
+alias server="python -m SimpleHTTPServer 9000"
+
 # Instead of typing the whole command simply use the alias.
 server
 Serving HTTP on 0.0.0.0 port 9000 ...
